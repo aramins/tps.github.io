@@ -1,0 +1,64 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/collapsible.css">
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="subnav">
+        <a href="sicurezza.html">Sicurezza</a>
+    <div class="subnav">
+      </div>
+    </div>
+    <div class="subnav">
+        <a href="Scheda Tecnica.html">Scheda tecnica</a>
+      </div>
+    </div>
+    
+<center><h1>Applicazioni</h1></center>
+
+<button type="button" class="collapsible"><h2>> Applicazioni Preinstallate</h2></button>
+        <div class="content">
+            Nel telefono ci sono delle applicazioni gia preinstallate e sono: <br>
+            <ul>
+                <li>YouTube</li>
+                <li>Google</li>
+                <li>Chrome</li>
+                <li>Calendario</li>
+                <li>Calcolatrice</li>
+                <li>Mappe</li>
+                <li>Play Store</li>
+                <li>Play Musica</li>
+                <li>Gmail</li>
+                <li>E molte altre</li>
+            </ul>
+        </div>
+         <br> <br>
+
+         <button type="button" class="collapsible"><h2>> Applicazioni Installabili</h2></button>
+         <div class="content">
+            Possiamo installare noi delle applicazioni come i social che ormai conosciamo tutti come: <br> <br>
+            <img src="immagini/instagram.webp" width="80" height="80" alt="Instagram"> <img src="immagini/whatsapp.png" width="80" height="80" alt="WhatsApp"> <img src="immagini/facebook.png" width="80" height="80" alt="Facebook"> <br>
+            Instagram  Whatsapp  Facebook <br>
+         </div>
+          <br> <br>
+ 
+ 
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>

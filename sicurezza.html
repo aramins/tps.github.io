@@ -1,0 +1,68 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/collapsible.css">
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="subnav">
+        <div class="subnav">
+            <a href="applicazioni.html">Applicazioni</a>
+          </div>
+        </div>
+        <div class="subnav">
+            <a href="Scheda Tecnica.html">Scheda tecnica</a>
+          </div>
+        </div>
+        
+        
+
+    <center><h1>Sicurezza</h1></center>
+
+    <button type="button" class="collapsible"><h2>> Riconoscimento Facciale</h2></button>
+    <div class="content">
+        Il telefono puo' riconoscere la tua faccia grazie alla fotocamera anteriore<br>
+    </div>
+     <br> <br>
+
+    <button type="button" class="collapsible"><h2>> Impronta Digitale</h2></button>
+    <div class="content">
+        Il telefono puo' riconoscere la tue impronta digitale grazie al sensore posto sul retro sotto la fotocamera <br>
+        <img src="immagini/fingerprint.jpg" alt="Sensore di impronte digitale">
+    </div>
+      <br> <br>
+    
+    <br>
+
+    <button type="button" class="collapsible"><h2>> PIN/Password</h2></button>
+    <div class="content">
+        Il telefono puo' essere sbloccato tramite l'inserimento di un codice PIN numerico o di una passowrd alfanumerica. <br>
+        Questa opzione va configurata obbligatoriamente in caso il Riconoscimento facciale o l'impronta digitale non funzioni
+    </div>
+     <br> <br>
+
+     <form method="get" action="raccomandazioni_sicurezza.html">
+        <button class="button" type="submit">▶ Raccomandazioni di Sicurezza</button>
+    </form>
+
+</body>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
